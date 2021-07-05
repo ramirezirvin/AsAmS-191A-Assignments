@@ -1,0 +1,44 @@
+html, body {
+    padding: 2px;
+ }
+
+ body {
+     display: grid;
+     grid-template-rows: .1fr .30fr .60fr .05fr;
+     grid-template-columns: 1fr;
+     grid-template-areas: "header" "main" "map"  "footer";
+     justify-content: center;
+     background-color: rgb(210, 241, 210);
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     border-style: dotted;
+     border-color:black;
+ }
+
+ header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: .2fr .6fr .2fr;
+    justify-content: right;
+    background-color: palegreen;
+ }
+
+.main {
+    display: grid;
+    grid-area: main;
+    background-color: palegreen;
+    height: 1vh;
+}
+
+#map {
+    grid-area: map;
+    height: 35vh;
+    border-style: double;
+    border-color: midnightblue;
+    border-width: 1vh;
+}
+
+#footer {
+    grid-area: footer;
+    background-color: palegreen;
+    font-size: x-small;
+}
