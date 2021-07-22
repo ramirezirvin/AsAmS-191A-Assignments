@@ -1,0 +1,16 @@
+body{
+    display:grid;
+    grid-template-columns: 1fr 1fr; /* this creates an even two column layout*/
+    grid-template-areas: "maparea sidepanel" /* this creates one row with map panel on the left and sidepanel on the right */
+}
+
+#mapArea{
+    height:90vh;
+    grid-area: maparea;
+    border-style: double;
+} 
+
+#survey{
+    grid-area: sidepanel;
+    border-style: double;
+} 
