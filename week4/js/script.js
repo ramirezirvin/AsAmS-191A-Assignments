@@ -5,9 +5,9 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(myMap);
 
 function addMarker(data){
-    // sonsole.log(data)
+    // console.log(data)
     // these are the names of our fields in the google sheets
-    L.marker([data.lat,data.lng]).addTo(myMap).bindPopup(`<h3>Location: ${data.location}</h3>`)
+    L.marker([data.lat,data.lng]).addTo(myMap).bindPopup(`<h3>Fluent English: ${data.doyouspeakenglishfluently}</h3>`+ `<h3>Location: ${data.location}</h3>`+ `<h3>Previous Title IX Knowledge:${data.didyouknowuclahasatitleixoffice}</h3>`)
     return data.location
  }
 
