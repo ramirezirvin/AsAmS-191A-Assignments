@@ -1,0 +1,73 @@
+body{
+    display:grid;
+    background-color: cadetblue;
+    grid-auto-columns: 50% 50% 0%;
+   
+   
+    grid-template-areas: "mappanel sidepanel header"; 
+    grid-template-rows: 30vw 30vw 20vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 0.5%;
+    margin-right: 2%;
+
+    
+}
+#grid{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+#mapArea{
+    height:100vh;
+    grid-area: mappanel;
+    grid-template-columns: subgrid;
+    grid-column-start: 1;
+  grid-column-end: 1;
+  grid-column-gap: 0px;
+   
+} 
+#header{
+    font-size: 45px;
+    font-family: monospace;
+    background-color: cadetblue;
+    font-weight: 300;
+    grid-template-areas: header;
+}
+
+#survey{
+    grid-area: sidepanel;
+    background-color: cadetblue;
+    grid-area: survey;
+    overflow:visible;
+    padding-top: 0%;
+    position: relative;
+    font-family:monospace;
+    font-style: italic;
+    font-size: 25px;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    
+} 
+
+#survey iframe {
+    border: 0;
+    height: 100%;
+    left: 1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    
+ }
+
+#contents{
+    /* this gives the name to our area */
+    grid-area: sidepanel;
+    background-color: cadetblue;
+
+}
+.grid-container {
+    display: grid;
+    grid-gap: 10px 10px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  

@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>UCLA Title IX Office Survey</title>
+        <title>COVID-19 Vaccination Stories</title>
         <meta charset="utf-8" />
         <link rel="shortcut icon" href="#">
         <link rel="stylesheet" href="style/style.css">
-        
-     
 
         <!-- Leaflet's css-->
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
@@ -15,12 +13,19 @@
         <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     </head>
     
-    <body>
+     <body>
+        <header>
+            <h1>
+                Welcome to COVID-19 Vaccination Stories
+            </h1>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScP0kmuHJGnuR525NjJArnagp0p9GTU9OBAAXE2mOB8R2gBmg/viewform?embedded=true" id="survey">
+                    <button>
+                        Take the survey!
+                    </button>
+                </a>
+        </header>
+        <div id="contents"></div>
         <div id="mapArea"></div>
-        <div id="survey">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScP0kmuHJGnuR525NjJArnagp0p9GTU9OBAAXE2mOB8R2gBmg/viewform?embedded=true" width="640" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe><!-- put the survey in here! -->
-        </div>
         <script src="js/script.js"></script>
- 
     </body>
 </html>
