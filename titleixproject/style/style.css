@@ -5,12 +5,12 @@ body{
 }
 
 #mapArea{
-    height:90vh;
+    height:92vh;
     grid-area: maparea;
-    border-style: double;
+    
 } 
 
 #survey{
     grid-area: sidepanel;
-    border-style: double;
+    
 } 
